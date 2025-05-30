@@ -13,13 +13,10 @@ from selenium.webdriver.chrome.options import Options
 from concurrent.futures import ThreadPoolExecutor
 import traceback
 
-# キャッシュファイル
 CACHE_FILE = "bing_cache_simple.json"
 
-# ログ設定
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Driver は Selenium が自動管理
 def get_driver():
     options = Options()
     options.add_argument("--headless=new")
@@ -30,7 +27,6 @@ def get_driver():
     driver = webdriver.Chrome(options=options)
     return driver
 
-# 優先ドメインスコア
 DOMAIN_PRIORITY = [
     ".co.jp", ".go.jp", ".or.jp",
     "prtimes.jp", "news.yahoo.co.jp", "nikkei.com",
@@ -40,17 +36,23 @@ DOMAIN_PRIORITY = [
 def domain_score(url):
     for i, domain in enumerate(DOMAIN_PRIORITY):
         if domain in url:
-            return len(DOMAIN_PRIORITY) - i  # 高スコアほど上位
+            return len(DOMAIN_PRIORITY) - i
     return 0
 
-# Bing検索
+def is_low_quality(snippet, url):
+    low_keywords = ["登記", "手続き", "ガイド", "説明", "法律事務所", "司法書士", "届出"]
+    for kw in low_keywords:
+        if kw in snippet or kw in url:
+            return True
+    return False
+
 def search_bing(driver, company):
     query = f"{company} 社名変更 OR 商号変更 OR 新社名"
     url = f"https://www.bing.com/search?q={urllib.parse.quote(query)}"
     driver.get(url)
     time.sleep(random.uniform(1.5, 3.0))
     results = []
-    for elem in driver.find_elements(By.CSS_SELECTOR, "li.b_algo")[:10]:  # 10件見る
+    for elem in driver.find_elements(By.CSS_SELECTOR, "li.b_algo")[:10]:
         try:
             title = elem.find_element(By.TAG_NAME, "h2").text
             snippet = elem.find_element(By.CLASS_NAME, "b_caption").text
@@ -61,23 +63,41 @@ def search_bing(driver, company):
             continue
     return results
 
-# 強化パターン
 def extract_info(text, old_name):
-    name_pattern = re.compile(
-        r"(?:社名変更|商号変更|社名を変更|改称)[^\n]*?(?:へ|に|として|とする|することに)?([^\s「」（）『』【】]{2,})"
+    name_pattern1 = re.compile(
+        r"[「『【]([^\n「」『』【】]{2,})[」』】]\s*(?:に変更|へ変更|とする|と決定)"
     )
+    name_pattern2 = re.compile(
+        r"(?:社名変更|商号変更|社名を変更|改称)[^\n]{0,50}?([^\s「」（）『』【】]{2,}(株式会社|有限会社|合同会社|Inc\.|LLC))"
+    )
+    name_pattern3 = re.compile(
+        r"(?:「)?([A-Za-z0-9一-龥ぁ-んァ-ンー＆’\'\-\.\s]{2,})(?:」)?(?:に変更|へ変更|へ名称を変更|とする|と決定)"
+    )
+
     date_pattern = re.compile(
         r"(\d{4}年\d{1,2}月\d{1,2}日付?|\d{4}年\d{1,2}月付?|\d{4}年付?)"
     )
+
     reason_pattern = re.compile(
         r"(?:理由は|ため|ことから|背景には)([^。]{3,15})。"
     )
 
-    name_match = name_pattern.search(text)
+    name_match1 = name_pattern1.search(text)
+    name_match2 = name_pattern2.search(text) if not name_match1 else None
+    name_match3 = name_pattern3.search(text) if not name_match1 and not name_match2 else None
+
     date_match = date_pattern.search(text)
     reason_match = reason_pattern.search(text)
 
-    new_name = name_match.group(1) if name_match else "不明"
+    if name_match1:
+        new_name = name_match1.group(1)
+    elif name_match2:
+        new_name = name_match2.group(1)
+    elif name_match3:
+        new_name = name_match3.group(1)
+    else:
+        new_name = "不明"
+
     date = date_match.group(1) if date_match else "変更日不明"
     reason = reason_match.group(1) if reason_match else "不明"
 
@@ -86,26 +106,25 @@ def extract_info(text, old_name):
 
     return None, None, None
 
-# キャッシュロード
 def load_cache():
     if os.path.exists(CACHE_FILE):
         with open(CACHE_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
 
-# キャッシュ保存
 def save_cache(cache):
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
-# 1社分析
 def analyze_company(company):
     cache = load_cache()
     key = company.strip().lower()
 
     if key in cache:
         logging.info(f"【RESUME】スキップ: {company}")
-        return cache[key]
+        result = cache[key]
+        result[4] = "スキップ"
+        return result
 
     driver = None
     try:
@@ -113,8 +132,11 @@ def analyze_company(company):
         driver = get_driver()
         results = search_bing(driver, company)
 
-        # スコア順にソート
-        results_sorted = sorted(results, key=lambda x: domain_score(x[2]), reverse=True)
+        results_sorted = sorted(
+            [r for r in results if not is_low_quality(r[1], r[2])],
+            key=lambda x: domain_score(x[2]),
+            reverse=True
+        )
 
         for full_text, snippet, url in results_sorted:
             new_name, date, reason = extract_info(full_text, company)
@@ -124,7 +146,6 @@ def analyze_company(company):
                 save_cache(cache)
                 return result
 
-        # 変更なし
         result = [company, "変更なし", "変更日不明", "不明", "変更なし", "", ""]
         cache[key] = result
         save_cache(cache)
@@ -138,14 +159,12 @@ def analyze_company(company):
         if driver:
             driver.quit()
 
-# 全社並列処理
 def process_all(companies):
-    max_workers = 12  # ★ 1400社なら12本推奨
+    max_workers = 12
     logging.info(f"スレッド数: {max_workers}")
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         return list(executor.map(lambda c: analyze_company(c), companies))
 
-# メイン
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("input", help="会社名CSVファイル")
