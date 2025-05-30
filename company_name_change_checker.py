@@ -6,7 +6,8 @@ import pandas as pd
 import urllib.parse
 import os
 import random
-from tqdm import tqdm
+from tqdm.asyncio import tqdm_asyncio
+import argparse
 
 # ✅ キャッシュファイル
 CACHE_FILE = "bing_cache_playwright.json"
@@ -84,9 +85,11 @@ def clean_bing_redirect(url):
 
 def result_score(company, title, snippet, url):
     score = domain_score(url)
+    # AI風補助: 強いワードがあれば優遇
+    strong_keywords = ["新社名", "商号変更", "新商号", "変更予定", "決定", "発表", "ニュースリリース"]
     if normalize_company(company) in (title + snippet):
         score += 10
-    if any(kw in (title + snippet) for kw in ["新社名", "商号変更", "新商号", "変更予定"]):
+    if any(kw in (title + snippet) for kw in strong_keywords):
         score += 8
     if "pdf" in url.lower():
         score -= 3
@@ -215,10 +218,12 @@ async def analyze_company(playwright, company):
 
 # ✅ メイン
 async def main():
-    input_csv = "input.csv"
-    output_csv = "output.csv"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input_csv", help="入力 CSVファイル（会社名列が必要）")
+    parser.add_argument("output_csv", help="出力 CSVファイル")
+    args = parser.parse_args()
 
-    df = pd.read_csv(input_csv)
+    df = pd.read_csv(args.input_csv)
     companies = df["会社名"].dropna().tolist()
     print(f"Total companies: {len(companies)}")
 
@@ -226,11 +231,12 @@ async def main():
     all_results = []
 
     async with async_playwright() as playwright:
-        for company in tqdm(companies):
-            result = await analyze_company(playwright, company)
-            key = normalize_company(company)
-            results_dict[key] = result
-            all_results.append(result)
+        tasks = [analyze_company(playwright, company) for company in companies]
+        for result in tqdm_asyncio.as_completed(tasks, total=len(companies)):
+            r = await result
+            key = normalize_company(r[0])
+            results_dict[key] = r
+            all_results.append(r)
 
     df_out_rows = []
     for company in companies:
@@ -241,8 +247,8 @@ async def main():
     df_out = pd.DataFrame(df_out_rows, columns=[
         "会社名", "新社名", "変更日", "変更理由", "変更状況", "検出文", "URL"
     ])
-    df_out.to_csv(output_csv, index=False, encoding="utf-8-sig")
-    print(f"✅ Output saved: {output_csv}")
+    df_out.to_csv(args.output_csv, index=False, encoding="utf-8-sig")
+    print(f"✅ Output saved: {args.output_csv}")
 
 # ✅ エントリーポイント
 if __name__ == "__main__":
