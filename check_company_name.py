@@ -41,18 +41,17 @@ DOMAIN_PRIORITY = [
 
 LOW_QUALITY_DOMAINS = [
     "genspark.ai", "reflet-office.com", "note.com", "qiita.com", "zenn.dev",
-    "office-tsuda.net",
-    "advisors-freee.jp",
-    "freee.co.jp",
-    "houmukyoku.moj.go.jp",
-    "bing.com/ck/a"
+    "office-tsuda.net", "advisors-freee.jp", "freee.co.jp",
+    "houmukyoku.moj.go.jp", "bing.com/ck/a",
+    "ai-con.lawyer", "shiodome.co.jp",
+    "zeiri4.com", "bizocean.jp", "corporate.ai-con.lawyer", "kaonavi.jp"
 ]
 
 def domain_score(url):
-    url = url or ""  # None対策
+    url = url or ""
     for domain in LOW_QUALITY_DOMAINS:
         if domain in url:
-            return -30  # 強力に弾く
+            return -100
     for i, domain in enumerate(DOMAIN_PRIORITY):
         if domain in url:
             return len(DOMAIN_PRIORITY) - i
@@ -63,10 +62,8 @@ def is_low_quality(snippet, url):
     low_keywords = [
         "商号変更とは", "社名変更とは", "会社名が変更になる場合は"
     ]
-
-    snippet = snippet or ""  # None 対策！
-    url = url or ""          # None 対策！
-
+    snippet = snippet or ""
+    url = url or ""
     for kw in low_keywords:
         if kw in snippet or kw in url:
             return True
@@ -89,7 +86,7 @@ def search_bing(driver, company):
     query = f"{company} 社名変更 OR 商号変更 OR 新社名"
     url = f"https://www.bing.com/search?q={urllib.parse.quote(query)}"
     driver.get(url)
-    time.sleep(random.uniform(2.0, 4.0))
+    time.sleep(random.uniform(1.5, 4.5))
     results = []
     for elem in driver.find_elements(By.CSS_SELECTOR, "li.b_algo")[:10]:
         try:
@@ -102,29 +99,48 @@ def search_bing(driver, company):
             continue
     return results
 
-# ✅ ゴミ新社名リスト
-BAD_NAMES = ["当ページを参考", "こちら", "不明", "参考", "社名は", "といいます"]
+# 🚫 除外ワード
+EXCLUDE_NAME_PATTERNS = [
+    r"正式には", r"通称", r"呼ばれ", r"一般的に", r"略称", r"通名", r"会社名とは", r"社名とは"
+]
+
+# 🚫 BAD_NAMES 強化
+BAD_NAMES = [
+    "当ページを参考", "こちら", "不明", "参考", "社名は", "といいます", "正式には", "商号", "社名変更とは"
+]
 
 # ✅ extract_info 改良版
 def extract_info(text, old_name):
-    name_match = re.search(r'社名を「?([^\s「」]{3,})」?に変更|社名は「?([^\s「」]{3,})」?|([^\s「」]{3,})株式会社に変更', text)
+    if any(re.search(pat, text) for pat in EXCLUDE_NAME_PATTERNS):
+        return None, None, None
+
+    name_match = re.search(
+        r'社名(?:を)?「?([^\s「」]{2,})」?に変更|'
+        r'新社名は「?([^\s「」]{2,})」?|'
+        r'「?([^\s「」]{2,})株式会社」?に変更|'
+        r'([^\s「」]{2,})株式会社に変更', 
+        text
+    )
+
     date_match = re.search(r"(\d{4}年\d{1,2}月\d{1,2}日|\d{4}年\d{1,2}月|\d{4}年)", text)
     reason_match = re.search(r"(理由は[^。]{3,15})。", text)
 
-    new_name = name_match.group(1) or name_match.group(2) or name_match.group(3) if name_match else "不明"
+    new_name = None
+    if name_match:
+        for g in name_match.groups():
+            if g and g not in BAD_NAMES and not g.startswith("は"):
+                new_name = g
+                break
+    if not new_name:
+        return None, None, None
+
+    if old_name.replace("株式会社", "").strip() in new_name:
+        return None, None, None
+
     date = date_match.group(1) if date_match else "変更日不明"
     reason = reason_match.group(1).replace("理由は", "") if reason_match else "不明"
 
-    if new_name.startswith("は"):
-        return None, None, None
-
-    if new_name in BAD_NAMES:
-        return None, None, None
-
-    if new_name != "不明" and old_name not in new_name:
-        return new_name, date, reason
-
-    return None, None, None
+    return new_name, date, reason
 
 # ✅ キャッシュ操作
 def load_cache():
@@ -145,7 +161,8 @@ def analyze_company(company):
     if key in cache:
         logging.info(f"【RESUME】スキップ: {company}")
         result = cache[key]
-        result[4] = "スキップ"
+        if result[4] == "スキップ":
+            result[4] = "変更なし"
         return result
 
     driver = None
@@ -160,7 +177,6 @@ def analyze_company(company):
             reverse=True
         )
 
-        # ✅ 変更あり優先
         for full_text, snippet, url in results_sorted:
             new_name, date, reason = extract_info(full_text, company)
             if new_name:
@@ -169,7 +185,6 @@ def analyze_company(company):
                 save_cache(cache)
                 return result
 
-        # ✅ 変更なし → 上位記事の snippet を出す
         if results_sorted:
             snippet = results_sorted[0][1] or "なし"
             url = results_sorted[0][2] or ""
@@ -206,29 +221,25 @@ def main():
     args = parser.parse_args()
 
     df = pd.read_csv(args.input)
-    companies = df["会社名"].dropna().tolist()  # 重複OK → 順番維持
+    companies = df["会社名"].dropna().tolist()
     logging.info(f"対象社数: {len(companies)}社")
 
-    # ✅ 処理
     results_dict = {}
     all_results = []
 
     for result in process_all(companies):
         key = result[0].strip().lower()
-        results_dict[key] = result  # キャッシュ更新用
+        results_dict[key] = result
         all_results.append(result)
 
-    # ✅ 出力順 → 入力順に揃えて出力
     df_out_rows = []
     for company in companies:
         key = company.strip().lower()
         result = results_dict.get(key)
         if result is None:
-            # 万一キャッシュが欠けた場合 → fallback
             result = analyze_company(company)
         df_out_rows.append(result)
 
-    # ✅ DataFrame 出力
     df_out = pd.DataFrame(df_out_rows, columns=[
         "会社名", "新社名", "変更日", "変更理由", "変更状況", "検出文", "URL"
     ])
