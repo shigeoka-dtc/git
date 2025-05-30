@@ -1,36 +1,86 @@
 import os
 import re
+import time
 import json
+import random
 import logging
-import asyncio
+import argparse
+import urllib.parse
 import pandas as pd
-from tqdm.asyncio import tqdm
-from playwright.async_api import async_playwright
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from concurrent.futures import ThreadPoolExecutor
+from tqdm import tqdm
+import traceback
 
-CACHE_FILE = "bing_cache_simple.json"
+# ✅ キャッシュファイル名
+CACHE_FILE = "bing_cache_simple_v5_plus.json"
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-async def search_bing(company, page):
+def get_driver():
+    options = Options()
+    options.add_argument("--headless=new")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--window-size=1200,800")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    driver = webdriver.Chrome(options=options)
+    return driver
+
+# ⭐️ ドメイン優先
+DOMAIN_PRIORITY = [
+    ".co.jp", ".go.jp", ".or.jp",
+    "prtimes.jp", "news.yahoo.co.jp", "nikkei.com",
+    "businessinsider.jp", "itmedia.co.jp",
+    "impress.co.jp", "reuters.com", "asahi.com",
+    "mainichi.jp", "yomiuri.co.jp"
+]
+
+LOW_QUALITY_DOMAINS = [
+    "genspark.ai", "reflet-office.com", "note.com", "qiita.com", "zenn.dev"
+]
+
+def domain_score(url):
+    for domain in LOW_QUALITY_DOMAINS:
+        if domain in url:
+            return -10
+    for i, domain in enumerate(DOMAIN_PRIORITY):
+        if domain in url:
+            return len(DOMAIN_PRIORITY) - i
+    return 0
+
+# ⭐️ フィルタ
+def is_low_quality(snippet, url):
+    low_keywords = [
+        "登記", "手続き", "ガイド", "説明", "法律事務所", "司法書士", "届出",
+        "商号変更とは", "社名変更とは", "会社名が変更になる場合は"
+    ]
+    for kw in low_keywords:
+        if kw in snippet or kw in url:
+            return True
+    return False
+
+# Bing検索
+def search_bing(driver, company):
     query = f"{company} 社名変更 OR 商号変更 OR 新社名"
-    url = f"https://www.bing.com/search?q={query}"
-    await page.goto(url)
-    await page.wait_for_timeout(1000)
+    url = f"https://www.bing.com/search?q={urllib.parse.quote(query)}"
+    driver.get(url)
+    time.sleep(random.uniform(2.0, 4.0))  # ⭐️ ノート向け余裕Sleep
     results = []
-    elements = await page.query_selector_all("li.b_algo")
-    for elem in elements[:10]:
+    for elem in driver.find_elements(By.CSS_SELECTOR, "li.b_algo")[:10]:
         try:
-            title_elem = await elem.query_selector("h2")
-            title_text = await title_elem.inner_text() if title_elem else ""
-            snippet_elem = await elem.query_selector(".b_caption")
-            snippet_text = await snippet_elem.inner_text() if snippet_elem else ""
-            link_elem = await elem.query_selector("a")
-            link = await link_elem.get_attribute("href") if link_elem else ""
-            results.append((title_text + "\n" + snippet_text, snippet_text, link))
+            title = elem.find_element(By.TAG_NAME, "h2").text
+            snippet = elem.find_element(By.CLASS_NAME, "b_caption").text
+            link = elem.find_element(By.TAG_NAME, "a").get_attribute("href")
+            results.append((title + "\n" + snippet, snippet, link))
         except Exception as e:
             logging.debug(f"検索結果の解析エラー: {e}")
             continue
     return results
 
+# ⭐️ extract_info
 def extract_info(text, old_name):
     name_pattern1 = re.compile(
         r"[「『【]([^\n「」『』【】]{2,})[」』】]\s*(?:に変更|へ変更|とする|と決定)"
@@ -66,6 +116,10 @@ def extract_info(text, old_name):
     else:
         new_name = "不明"
 
+    # ⭐️ 誤引用防止
+    if new_name.startswith("は"):
+        return None, None, None
+
     date = date_match.group(1) if date_match else "変更日不明"
     reason = reason_match.group(1) if reason_match else "不明"
 
@@ -74,6 +128,7 @@ def extract_info(text, old_name):
 
     return None, None, None
 
+# キャッシュ
 def load_cache():
     if os.path.exists(CACHE_FILE):
         with open(CACHE_FILE, "r", encoding="utf-8") as f:
@@ -84,7 +139,8 @@ def save_cache(cache):
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
-async def analyze_company(browser, company):
+# analyze_company
+def analyze_company(company):
     cache = load_cache()
     key = company.strip().lower()
 
@@ -94,12 +150,11 @@ async def analyze_company(browser, company):
         result[4] = "スキップ"
         return result
 
-    context = await browser.new_context()
-    page = await context.new_page()
-
+    driver = None
     try:
         logging.info(f"検索開始: {company}")
-        results = await search_bing(company, page)
+        driver = get_driver()
+        results = search_bing(driver, company)
 
         results_sorted = sorted(
             [r for r in results if not is_low_quality(r[1], r[2])],
@@ -120,48 +175,39 @@ async def analyze_company(browser, company):
         save_cache(cache)
         return result
 
+    except Exception as e:
+        logging.error(f"エラー: {company} - {e}")
+        logging.error(traceback.format_exc())
+        return [company, "エラー", "不明", "不明", "処理失敗", str(e), ""]
     finally:
-        await context.close()
+        if driver:
+            driver.quit()
 
-DOMAIN_PRIORITY = [
-    ".co.jp", ".go.jp", ".or.jp",
-    "prtimes.jp", "news.yahoo.co.jp", "nikkei.com",
-    "businessinsider.jp", "itmedia.co.jp"
-]
+# 並列実行 (⭐️ ノートPC対応 → max_workers=6 に固定)
+def process_all(companies):
+    max_workers = 6  # ⭐️ 固定6に設定
+    logging.info(f"スレッド数: {max_workers}")
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        return list(tqdm(executor.map(lambda c: analyze_company(c), companies), total=len(companies)))
 
-def domain_score(url):
-    for i, domain in enumerate(DOMAIN_PRIORITY):
-        if domain in url:
-            return len(DOMAIN_PRIORITY) - i
-    return 0
+# メイン
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", help="会社名CSVファイル")
+    parser.add_argument("output", help="出力CSVファイル")
+    args = parser.parse_args()
 
-def is_low_quality(snippet, url):
-    low_keywords = ["登記", "手続き", "ガイド", "説明", "法律事務所", "司法書士", "届出"]
-    for kw in low_keywords:
-        if kw in snippet or kw in url:
-            return True
-    return False
-
-async def main():
-    df = pd.read_csv("companies.csv")
+    df = pd.read_csv(args.input)
     companies = df["会社名"].dropna().drop_duplicates().tolist()
     logging.info(f"対象社数: {len(companies)}社")
 
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        results = []
-
-        for company in tqdm(companies):
-            result = await analyze_company(browser, company)
-            results.append(result)
-
-        await browser.close()
+    results = process_all(companies)
 
     df_out = pd.DataFrame(results, columns=[
         "会社名", "新社名", "変更日", "変更理由", "変更状況", "検出文", "URL"
     ])
-    df_out.to_csv("output_playwright.csv", index=False, encoding="utf-8-sig")
-    logging.info("出力完了: output_playwright.csv")
+    df_out.to_csv(args.output, index=False, encoding="utf-8-sig")
+    logging.info(f"出力完了: {args.output}")
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
