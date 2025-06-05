@@ -1,0 +1,419 @@
+2025-06-04 17:16:54,041 - INFO - --- 社名変更情報チェッカーを開始します ---
+2025-06-04 17:16:54,042 - INFO - 入力ファイル: input.csv
+2025-06-04 17:16:54,042 - INFO - 出力ファイル: output.csv
+2025-06-04 17:16:54,042 - INFO - キャッシュファイル: bing_cache_playwright.json
+2025-06-04 17:16:54,042 - INFO - 同時実行検索数: 3
+2025-06-04 17:16:54,043 - INFO - Playwright ヘッドレスモード: False
+2025-06-04 17:16:54,059 - INFO - CSVファイルを 'utf-8' エンコーディングで読み込みました。
+2025-06-04 17:16:54,061 - INFO - 入力された会社名総数: 21社
+2025-06-04 17:17:09,970 - INFO - 検索開始: 株式会社エス・イー・シー・ハイテック (クエリ: "株式会社エス・イー・シー・ハイテック" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:09,971 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%82%B9%E3%83%BB%E3%82%A4%E3%83%BC%E3%83%BB%E3%82%B7%E3%83%BC%E3%83%BB%E3%83%8F%E3%82%A4%E3%83%86%E3%83%83%E3%82%AF%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:17:10,109 - INFO - 検索開始: 株式会社三井E&S DU (クエリ: "株式会社三井E&S DU" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:10,110 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E4%B8%89%E4%BA%95E%26S%20DU%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:17:10,129 - INFO - 検索開始: 株式会社マーブル (クエリ: "株式会社マーブル" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:10,129 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%9E%E3%83%BC%E3%83%96%E3%83%AB%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:17:18,173 - INFO - [DEBUG] Found 18 potential search result links for '"株式会社マーブル" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:17:18,428 - INFO - 本文クロール開始: https://www.comsis.co.jp/images/info_20241216.pdf
+2025-06-04 17:17:19,706 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社マーブル
+2025-06-04 17:17:19,823 - INFO - 変更なしと判断: 株式会社マーブル
+2025-06-04 17:17:20,161 - INFO - 検索開始: 平田機工株式会社 (クエリ: "平田機工株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:20,161 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E5%B9%B3%E7%94%B0%E6%A9%9F%E5%B7%A5%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:17:20,785 - INFO - [DEBUG] Found 36 potential search result links for '"株式会社三井E&S DU" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:17:22,240 - INFO - 本文クロール開始: https://www.mitsuipr.com/news/2023/0406-2/
+2025-06-04 17:17:23,049 - INFO - [DEBUG] Found 27 potential search result links for '"株式会社エス・イー・シー・ハイテック" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:17:23,711 - INFO - 変更なしと判断: 株式会社エス・イー・シー・ハイテック
+2025-06-04 17:17:24,062 - INFO - 検索開始: 日本金銭機械株式会社 (クエリ: "日本金銭機械株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:24,062 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%97%A5%E6%9C%AC%E9%87%91%E9%8A%AD%E6%A9%9F%E6%A2%B0%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:17:25,141 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社三井E&S DU
+2025-06-04 17:17:25,242 - INFO - 変更なしと判断: 株式会社三井E&S DU
+2025-06-04 17:17:25,626 - INFO - 検索開始: 株式会社エリジオン (クエリ: "株式会社エリジオン" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:25,627 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%83%AA%E3%82%B8%E3%82%AA%E3%83%B3%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:17:32,133 - INFO - [DEBUG] Found 23 potential search result links for '"平田機工株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:17:33,351 - INFO - 本文クロール開始: http://www.kumamoto-keizai.co.jp/content/asp/week/week.asp?PageID=3&Kkiji=20937&tpg=444&Knum=4
+2025-06-04 17:17:33,906 - INFO - [DEBUG] Found 19 potential search result links for '"株式会社エリジオン" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:17:34,087 - INFO - [DEBUG] Found 30 potential search result links for '"日本金銭機械株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:17:34,839 - INFO - 変更なしと判断: 株式会社エリジオン
+2025-06-04 17:17:35,157 - INFO - 変更なしと判断: 日本金銭機械株式会社
+2025-06-04 17:17:35,346 - INFO - 検索開始: 新明和工業株式会社 (クエリ: "新明和工業株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:35,348 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%96%B0%E6%98%8E%E5%92%8C%E5%B7%A5%E6%A5%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:17:35,513 - INFO - 検索開始: 株式会社早川金属工業研究所  (クエリ: "株式会社早川金属工業研究所 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:35,514 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%97%A9%E5%B7%9D%E9%87%91%E5%B1%9E%E5%B7%A5%E6%A5%AD%E7%A0%94%E7%A9%B6%E6%89%80%20%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:17:38,711 - INFO - 本文クロールで新社名を発見できませんでした: 平田機工株式会社
+2025-06-04 17:17:39,054 - INFO - 変更なしと判断: 平田機工株式会社
+2025-06-04 17:17:39,490 - INFO - 検索開始: 松下電器産業株式会社  (クエリ: "松下電器産業株式会社 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:39,490 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%9D%BE%E4%B8%8B%E9%9B%BB%E5%99%A8%E7%94%A3%E6%A5%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%20%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:17:46,731 - INFO - [DEBUG] Found 22 potential search result links for '"株式会社早川金属工業研究所 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:17:47,236 - INFO - [DEBUG] Found 28 potential search result links for '"新明和工業株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:17:47,665 - INFO - 変更なしと判断: 株式会社早川金属工業研究所 
+2025-06-04 17:17:48,165 - INFO - 本文クロール開始: https://www.nikkei.com/nkd/disclosure/tdnr/20230323534657/
+2025-06-04 17:17:48,332 - INFO - 検索開始: 株式会社ネクスト (クエリ: "株式会社ネクスト" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:48,332 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%8D%E3%82%AF%E3%82%B9%E3%83%88%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:17:49,902 - INFO - [DEBUG] Found 18 potential search result links for '"松下電器産業株式会社 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:17:49,997 - INFO - 本文クロールで新社名を発見できませんでした: 新明和工業株式会社
+2025-06-04 17:17:50,151 - INFO - 変更なしと判断: 新明和工業株式会社
+2025-06-04 17:17:50,460 - INFO - 検索開始: 株式会社Sky (クエリ: "株式会社Sky" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:50,460 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BESky%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:17:50,560 - INFO - 本文クロール開始: https://kaden.watch.impress.co.jp/cda/news/2008/06/26/2509.html
+2025-06-04 17:17:56,040 - INFO - [DEBUG] Found 17 potential search result links for '"株式会社ネクスト" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:17:56,364 - INFO - 本文クロール開始: https://next-navi.co.jp/information/news/trade_name_change
+2025-06-04 17:17:59,253 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社ネクスト
+2025-06-04 17:17:59,351 - INFO - 変更なしと判断: 株式会社ネクスト
+2025-06-04 17:17:59,717 - INFO - 検索開始: 新明和工業株式会社 (クエリ: "新明和工業株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:17:59,718 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%96%B0%E6%98%8E%E5%92%8C%E5%B7%A5%E6%A5%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:18:01,179 - INFO - [DEBUG] Found 23 potential search result links for '"株式会社Sky" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:18:01,488 - INFO - 本文クロール開始: https://www.skygroup.jp/news/030618/
+2025-06-04 17:18:04,737 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社Sky
+2025-06-04 17:18:04,935 - INFO - 変更なしと判断: 株式会社Sky
+2025-06-04 17:18:05,260 - INFO - 検索開始: 株式会社早川金属工業研究所  (クエリ: "株式会社早川金属工業研究所 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:18:05,261 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%97%A9%E5%B7%9D%E9%87%91%E5%B1%9E%E5%B7%A5%E6%A5%AD%E7%A0%94%E7%A9%B6%E6%89%80%20%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:18:07,094 - INFO - [DEBUG] Found 27 potential search result links for '"新明和工業株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:18:07,381 - INFO - 本文クロール開始: https://www.nikkei.com/nkd/disclosure/tdnr/20230323534657/
+2025-06-04 17:18:08,995 - INFO - 本文クロールで新社名を発見できませんでした: 新明和工業株式会社
+2025-06-04 17:18:09,061 - INFO - 変更なしと判断: 新明和工業株式会社
+2025-06-04 17:18:09,344 - INFO - 検索開始: 株式会社ダイテック (クエリ: "株式会社ダイテック" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:18:09,344 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%80%E3%82%A4%E3%83%86%E3%83%83%E3%82%AF%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:18:16,192 - INFO - [DEBUG] Found 20 potential search result links for '"株式会社早川金属工業研究所 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:18:17,138 - INFO - 変更なしと判断: 株式会社早川金属工業研究所 
+2025-06-04 17:18:17,460 - INFO - [DEBUG] Found 18 potential search result links for '"株式会社ダイテック" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:18:17,528 - INFO - 検索開始: 株式会社ダイコーテクノ (クエリ: "株式会社ダイコーテクノ" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:18:17,528 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%80%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%86%E3%82%AF%E3%83%8E%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:18:17,791 - INFO - 本文クロール開始: https://www.daitec.jp/info/cad_sunz.html
+2025-06-04 17:18:19,600 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社ダイテック
+2025-06-04 17:18:19,687 - INFO - 変更なしと判断: 株式会社ダイテック
+2025-06-04 17:18:20,007 - INFO - 検索開始: 株式会社早川金属工業研究所 (クエリ: "株式会社早川金属工業研究所" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:18:20,007 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%97%A9%E5%B7%9D%E9%87%91%E5%B1%9E%E5%B7%A5%E6%A5%AD%E7%A0%94%E7%A9%B6%E6%89%80%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:18:24,632 - INFO - [DEBUG] Found 17 potential search result links for '"株式会社ダイコーテクノ" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:18:24,913 - INFO - 変更なしと判断: 株式会社ダイコーテクノ
+2025-06-04 17:18:25,399 - INFO - 検索開始: 松下電器産業株式会社  (クエリ: "松下電器産業株式会社 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:18:25,400 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%9D%BE%E4%B8%8B%E9%9B%BB%E5%99%A8%E7%94%A3%E6%A5%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%C2%A0%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:18:28,813 - INFO - [DEBUG] Found 23 potential search result links for '"株式会社早川金属工業研究所" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:18:29,050 - INFO - 変更なしと判断: 株式会社早川金属工業研究所
+2025-06-04 17:18:29,440 - INFO - 検索開始: 株式会社バルス (クエリ: "株式会社バルス" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:18:29,440 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%90%E3%83%AB%E3%82%B9%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:18:33,292 - INFO - [DEBUG] Found 17 potential search result links for '"松下電器産業株式会社 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:18:33,544 - INFO - 本文クロール開始: https://kaden.watch.impress.co.jp/cda/news/2008/06/26/2509.html
+2025-06-04 17:18:37,774 - INFO - 本文クロールで新社名発見！ 松下電器産業株式会社  → パナソニック株式会社
+2025-06-04 17:18:37,885 - INFO - 要確認（新社名候補あり）: 松下電器産業株式会社  -> 新社名候補: パナソニック株式会社
+2025-06-04 17:18:38,224 - INFO - 検索開始: 株式会社島村呉服店 (クエリ: "株式会社島村呉服店" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:18:38,224 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%B3%B6%E6%9D%91%E5%91%89%E6%9C%8D%E5%BA%97%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:18:38,627 - INFO - [DEBUG] Found 17 potential search result links for '"株式会社バルス" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:18:38,839 - INFO - 本文クロール開始: https://www.francfranc.co.jp/press/2017/ff_presrelease_20170705
+2025-06-04 17:18:41,965 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社バルス
+2025-06-04 17:18:42,020 - INFO - 変更なしと判断: 株式会社バルス
+2025-06-04 17:18:42,399 - INFO - 検索開始: 株式会社福武式書店 (クエリ: "株式会社福武式書店" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:18:42,399 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E7%A6%8F%E6%AD%A6%E5%BC%8F%E6%9B%B8%E5%BA%97%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:18:47,464 - INFO - [DEBUG] Found 18 potential search result links for '"株式会社島村呉服店" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:18:47,710 - INFO - 変更なしと判断: 株式会社島村呉服店
+2025-06-04 17:18:48,136 - INFO - 検索開始: 株式会社KUFU (クエリ: "株式会社KUFU" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-04 17:18:48,136 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEKUFU%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-04 17:18:51,955 - INFO - [DEBUG] Found 5 potential search result links for '"株式会社福武式書店" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:18:52,046 - INFO - 変更なしと判断: 株式会社福武式書店
+2025-06-04 17:18:57,524 - INFO - [DEBUG] Found 23 potential search result links for '"株式会社KUFU" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-04 17:18:57,800 - INFO - 本文クロール開始: https://blog.shojimiyata.com/entry/2017/04/03/160034
+2025-06-04 17:19:21,344 - ERROR - 本文クロール中にエラー発生（URL: https://kaden.watch.impress.co.jp/cda/news/2008/06/26/2509.html）。詳細: Timeout 90000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+Traceback (most recent call last):
+  File "C:\Users\nshigeoka\Desktop\git\company_name_change_checker.py", line 618, in analyze_company
+    await detail_page.wait_for_load_state('networkidle', timeout=90000)
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 9087, in wait_for_load_state
+    await self._impl_obj.wait_for_load_state(state=state, timeout=timeout)
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 568, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 243, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 271, in _wait_for_load_state_impl
+    await waiter.result()
+playwright._impl._errors.TimeoutError: Timeout 90000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-06-04 17:19:21,464 - INFO - 変更なしと判断: 松下電器産業株式会社 
+2025-06-04 17:20:29,928 - ERROR - 本文クロール中にエラー発生（URL: https://blog.shojimiyata.com/entry/2017/04/03/160034）。詳細: Timeout 90000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+Traceback (most recent call last):
+  File "C:\Users\nshigeoka\Desktop\git\company_name_change_checker.py", line 618, in analyze_company
+    await detail_page.wait_for_load_state('networkidle', timeout=90000)
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 9087, in wait_for_load_state
+    await self._impl_obj.wait_for_load_state(state=state, timeout=timeout)
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 568, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 243, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 271, in _wait_for_load_state_impl
+    await waiter.result()
+playwright._impl._errors.TimeoutError: Timeout 90000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-06-04 17:20:30,067 - INFO - 要確認（新社名候補あり）: 株式会社KUFU -> 新社名候補: 株式会社SmartHR
+2025-06-04 17:20:32,283 - INFO - 結果をExcelファイル 'output.xlsx' に出力しました。
+2025-06-04 17:20:32,285 - INFO - --- 社名変更情報チェッカーを終了します ---
+2025-06-05 10:28:11,375 - INFO - --- 社名変更情報チェッカーを開始します ---
+2025-06-05 10:28:11,376 - INFO - 入力ファイル: input.csv
+2025-06-05 10:28:11,376 - INFO - 出力ファイル: output.csv
+2025-06-05 10:28:11,378 - INFO - キャッシュファイル: bing_cache_playwright.json
+2025-06-05 10:28:11,378 - INFO - 同時実行検索数: 3
+2025-06-05 10:28:11,378 - INFO - Playwright ヘッドレスモード: False
+2025-06-05 10:28:11,415 - INFO - CSVファイルを 'utf-8' エンコーディングで読み込みました。
+2025-06-05 10:28:11,416 - INFO - 入力された会社名総数: 21社
+2025-06-05 10:28:36,949 - INFO - 検索開始: 株式会社エス・イー・シー・ハイテック (クエリ: "株式会社エス・イー・シー・ハイテック" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:28:36,949 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%82%B9%E3%83%BB%E3%82%A4%E3%83%BC%E3%83%BB%E3%82%B7%E3%83%BC%E3%83%BB%E3%83%8F%E3%82%A4%E3%83%86%E3%83%83%E3%82%AF%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:28:37,022 - INFO - 検索開始: 株式会社三井E&S DU (クエリ: "株式会社三井E&S DU" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:28:37,023 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E4%B8%89%E4%BA%95E%26S%20DU%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:28:37,065 - INFO - 検索開始: 株式会社マーブル (クエリ: "株式会社マーブル" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:28:37,065 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%9E%E3%83%BC%E3%83%96%E3%83%AB%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:28:46,878 - INFO - [DEBUG] Found 19 unique potential search result links for '"株式会社エス・イー・シー・ハイテック" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:28:47,436 - INFO - [DEBUG] Found 36 unique potential search result links for '"株式会社三井E&S DU" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:28:47,859 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://www.comjo.co.jp/news/pdf/20240701_news-release.pdf
+2025-06-05 10:28:47,860 - INFO - 本文クロール開始: https://www.comjo.co.jp/news/pdf/20240701_news-release.pdf
+2025-06-05 10:28:48,432 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://www.mes.co.jp/du/about/
+2025-06-05 10:28:48,432 - INFO - 本文クロール開始: https://www.mes.co.jp/du/about/
+2025-06-05 10:28:49,336 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社エス・イー・シー・ハイテック
+2025-06-05 10:28:49,482 - INFO - 変更なしと判断: 株式会社エス・イー・シー・ハイテック
+2025-06-05 10:28:49,856 - INFO - [DEBUG] Found 18 unique potential search result links for '"株式会社マーブル" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:28:49,947 - INFO - 検索開始: 平田機工株式会社 (クエリ: "平田機工株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:28:49,948 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E5%B9%B3%E7%94%B0%E6%A9%9F%E5%B7%A5%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:28:50,330 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社三井E&S DU
+2025-06-05 10:28:50,466 - INFO - 要確認（関連情報検出）: 株式会社三井E&S DU - 強力キーワード検出のみ, URL: https://www.mitsuipr.com/news/2023/0406-2/
+2025-06-05 10:28:50,775 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://special.nikkeibp.co.jp/atclh/ONB/24/tcs_hd0726/
+2025-06-05 10:28:50,775 - INFO - 本文クロール開始: https://special.nikkeibp.co.jp/atclh/ONB/24/tcs_hd0726/
+2025-06-05 10:28:50,937 - INFO - 検索開始: 日本金銭機械株式会社 (クエリ: "日本金銭機械株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:28:50,938 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%97%A5%E6%9C%AC%E9%87%91%E9%8A%AD%E6%A9%9F%E6%A2%B0%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:28:57,726 - INFO - [DEBUG] Found 23 unique potential search result links for '"平田機工株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:28:58,027 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://www.hirata.co.jp/news/archives/1616
+2025-06-05 10:28:58,027 - INFO - 本文クロール開始: https://www.hirata.co.jp/news/archives/1616
+2025-06-05 10:29:01,370 - INFO - [DEBUG] Found 87 unique potential search result links for '"日本金銭機械株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:29:01,606 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: a1aHR0cHM6Ly93d3cuamNtLWhxLmNvLmpwL2phL2lyL25ld3MvYXV0b18yMDIzMDcyNTUyNjUxNS9wZGZGaWxlLnBkZg
+2025-06-05 10:29:01,607 - INFO - 本文クロール開始: a1aHR0cHM6Ly93d3cuamNtLWhxLmNvLmpwL2phL2lyL25ld3MvYXV0b18yMDIzMDcyNTUyNjUxNS9wZGZGaWxlLnBkZg
+2025-06-05 10:29:01,962 - ERROR - 本文クロール中にエラー発生（URL: a1aHR0cHM6Ly93d3cuamNtLWhxLmNvLmpwL2phL2lyL25ld3MvYXV0b18yMDIzMDcyNTUyNjUxNS9wZGZGaWxlLnBkZg）。詳細: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "a1aHR0cHM6Ly93d3cuamNtLWhxLmNvLmpwL2phL2lyL25ld3MvYXV0b18yMDIzMDcyNTUyNjUxNS9wZGZGaWxlLnBkZg", waiting until "domcontentloaded"
+Traceback (most recent call last):
+  File "C:\Users\nshigeoka\Desktop\git\company_name_change_checker.py", line 630, in analyze_company
+    await detail_page.goto(target_url_for_crawl, timeout=90000, wait_until="domcontentloaded")
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 8991, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "a1aHR0cHM6Ly93d3cuamNtLWhxLmNvLmpwL2phL2lyL25ld3MvYXV0b18yMDIzMDcyNTUyNjUxNS9wZGZGaWxlLnBkZg", waiting until "domcontentloaded"
+
+2025-06-05 10:29:02,055 - INFO - 変更なしと判断: 日本金銭機械株式会社
+2025-06-05 10:29:02,427 - INFO - 検索開始: 株式会社エリジオン (クエリ: "株式会社エリジオン" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:29:02,428 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%83%AA%E3%82%B8%E3%82%AA%E3%83%B3%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:29:03,161 - INFO - 本文クロールで新社名を発見できませんでした: 平田機工株式会社
+2025-06-05 10:29:03,261 - ERROR - 会社名 '平田機工株式会社' の処理中に致命的なエラーが発生しました: no such group
+Traceback (most recent call last):
+  File "C:\Users\nshigeoka\Desktop\git\company_name_change_checker.py", line 682, in analyze_company
+    new_name_extracted, date_extracted, reason_extracted = extract_info(combined_text, original_company_name)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\Desktop\git\company_name_change_checker.py", line 334, in extract_info
+    date = date_match.group(1).strip()
+           ^^^^^^^^^^^^^^^^^^^
+IndexError: no such group
+2025-06-05 10:29:03,573 - INFO - 検索開始: 新明和工業株式会社 (クエリ: "新明和工業株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:29:03,574 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%96%B0%E6%98%8E%E5%92%8C%E5%B7%A5%E6%A5%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:29:11,187 - INFO - [DEBUG] Found 19 unique potential search result links for '"株式会社エリジオン" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:29:11,651 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://www.elysium-global.com/ja/about/
+2025-06-05 10:29:11,651 - INFO - 本文クロール開始: https://www.elysium-global.com/ja/about/
+2025-06-05 10:29:12,943 - INFO - [DEBUG] Found 28 unique potential search result links for '"新明和工業株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:29:13,263 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://www.shinmaywa.co.jp/company/history/
+2025-06-05 10:29:13,263 - INFO - 本文クロール開始: https://www.shinmaywa.co.jp/company/history/
+2025-06-05 10:29:15,958 - INFO - 本文クロールで新社名を発見できませんでした: 新明和工業株式会社
+2025-06-05 10:29:16,077 - INFO - 要確認（関連情報検出）: 新明和工業株式会社 - 強力キーワード検出のみ, URL: https://www.nikkei.com/nkd/disclosure/tdnr/20230323534657/
+2025-06-05 10:29:16,422 - INFO - 検索開始: 株式会社早川金属工業研究所  (クエリ: "株式会社早川金属工業研究所 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:29:16,422 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%97%A9%E5%B7%9D%E9%87%91%E5%B1%9E%E5%B7%A5%E6%A5%AD%E7%A0%94%E7%A9%B6%E6%89%80%20%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:29:17,657 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社エリジオン
+2025-06-05 10:29:17,718 - INFO - 変更なしと判断: 株式会社エリジオン
+2025-06-05 10:29:18,044 - INFO - 検索開始: 松下電器産業株式会社  (クエリ: "松下電器産業株式会社 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:29:18,045 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%9D%BE%E4%B8%8B%E9%9B%BB%E5%99%A8%E7%94%A3%E6%A5%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%20%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:29:26,030 - INFO - [DEBUG] Found 23 unique potential search result links for '"株式会社早川金属工業研究所 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:29:26,776 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: http://www.tokusen.sharp.co.jp/70th/history/history_1.html
+2025-06-05 10:29:26,777 - INFO - 本文クロール開始: http://www.tokusen.sharp.co.jp/70th/history/history_1.html
+2025-06-05 10:29:27,144 - INFO - [DEBUG] Found 17 unique potential search result links for '"松下電器産業株式会社 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:29:27,589 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://kaden.watch.impress.co.jp/cda/news/2008/06/26/2509.html
+2025-06-05 10:29:27,590 - INFO - 本文クロール開始: https://kaden.watch.impress.co.jp/cda/news/2008/06/26/2509.html
+2025-06-05 10:29:30,446 - INFO - 本文クロールで新社名発見！ 株式会社早川金属工業研究所  -> 早川金属工業株式会社
+2025-06-05 10:29:30,512 - INFO - 明確な変更検出: 株式会社早川金属工業研究所  -> 早川金属工業株式会社, 日付: 1931年, 理由: 創立40周年記念のため
+2025-06-05 10:29:30,903 - INFO - 検索開始: 株式会社ネクスト (クエリ: "株式会社ネクスト" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:29:30,904 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%8D%E3%82%AF%E3%82%B9%E3%83%88%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:29:34,352 - INFO - 本文クロールで新社名発見！ 松下電器産業株式会社  -> パナソニック株式会社
+2025-06-05 10:29:34,457 - INFO - 要確認（新社名候補あり）: 松下電器産業株式会社  -> 新社名候補: パナソニック株式会社, 日付: 2008年1月, 理由: 不明
+2025-06-05 10:29:34,829 - INFO - 検索開始: 株式会社Sky (クエリ: "株式会社Sky" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:29:34,829 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BESky%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:29:39,346 - INFO - [DEBUG] Found 17 unique potential search result links for '"株式会社ネクスト" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:29:39,640 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://next-navi.co.jp/information/news/trade_name_change
+2025-06-05 10:29:39,641 - INFO - 本文クロール開始: https://next-navi.co.jp/information/news/trade_name_change
+2025-06-05 10:29:42,359 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社ネクスト
+2025-06-05 10:29:42,446 - INFO - 要確認（関連情報検出）: 株式会社ネクスト - 強力キーワード検出のみ, URL: https://next-navi.co.jp/information/news/trade_name_change
+2025-06-05 10:29:42,800 - INFO - 検索開始: 新明和工業株式会社 (クエリ: "新明和工業株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:29:42,801 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%96%B0%E6%98%8E%E5%92%8C%E5%B7%A5%E6%A5%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:29:43,538 - INFO - [DEBUG] Found 19 unique potential search result links for '"株式会社Sky" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:29:43,895 - INFO - 公式サイト候補（中優先）を検出: https://www.skygroup.jp/company/history/
+2025-06-05 10:29:43,895 - INFO - 本文クロール開始: https://www.skygroup.jp/company/history/
+2025-06-05 10:29:48,172 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社Sky
+2025-06-05 10:29:48,258 - INFO - 要確認（関連情報検出）: 株式会社Sky - 強力キーワード検出のみ, URL: https://www.jpx.co.jp/listing/others/changed/index.html
+2025-06-05 10:29:48,518 - INFO - 検索開始: 株式会社早川金属工業研究所  (クエリ: "株式会社早川金属工業研究所 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:29:48,519 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%97%A9%E5%B7%9D%E9%87%91%E5%B1%9E%E5%B7%A5%E6%A5%AD%E7%A0%94%E7%A9%B6%E6%89%80%20%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:29:52,946 - INFO - [DEBUG] Found 28 unique potential search result links for '"新明和工業株式会社" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:29:53,295 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://www.shinmaywa.co.jp/company/history/
+2025-06-05 10:29:53,296 - INFO - 本文クロール開始: https://www.shinmaywa.co.jp/company/history/
+2025-06-05 10:29:55,636 - INFO - 本文クロールで新社名を発見できませんでした: 新明和工業株式会社
+2025-06-05 10:29:55,724 - INFO - 要確認（関連情報検出）: 新明和工業株式会社 - 強力キーワード検出のみ, URL: https://www.nikkei.com/nkd/disclosure/tdnr/20230323534657/
+2025-06-05 10:29:56,220 - INFO - 検索開始: 株式会社ダイテック (クエリ: "株式会社ダイテック" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:29:56,221 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%80%E3%82%A4%E3%83%86%E3%83%83%E3%82%AF%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:29:57,271 - INFO - [DEBUG] Found 57 unique potential search result links for '"株式会社早川金属工業研究所 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:29:57,676 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: a1aHR0cHM6Ly9oaXN0b3J5LWphcGFuZXNlLmNvbS9oaXN0b3J5LyVFNiU5NyVBOSVFNSVCNyU5RCVFNSVCRSVCMyVFNiVBQyVBMSVFMyU4MSU4QyVFNSVBNCVBNyVFOSU5OCVBQSVFOSU5OCVCRiVFNSU4MCU4RCVFOSU4NyU4RSVFMyU4MSVBQiVFNiU5NyVBOSVFNSVCNyU5RCVFOSU4NyU5MSVFNSVCMSU5RSVFNSVCNyVBNSVFNiVBNSVBRCVFNyVBMCU5NCVFNyVBOSVCNiVFNiU4OSU4MCVFMyU4MiU5MiVFOCVBOCVBRC8
+2025-06-05 10:29:57,677 - INFO - 本文クロール開始: a1aHR0cHM6Ly9oaXN0b3J5LWphcGFuZXNlLmNvbS9oaXN0b3J5LyVFNiU5NyVBOSVFNSVCNyU5RCVFNSVCRSVCMyVFNiVBQyVBMSVFMyU4MSU4QyVFNSVBNCVBNyVFOSU5OCVBQSVFOSU5OCVCRiVFNSU4MCU4RCVFOSU4NyU4RSVFMyU4MSVBQiVFNiU5NyVBOSVFNSVCNyU5RCVFOSU4NyU5MSVFNSVCMSU5RSVFNSVCNyVBNSVFNiVBNSVBRCVFNyVBMCU5NCVFNyVBOSVCNiVFNiU4OSU4MCVFMyU4MiU5MiVFOCVBOCVBRC8
+2025-06-05 10:29:57,947 - ERROR - 本文クロール中にエラー発生（URL: a1aHR0cHM6Ly9oaXN0b3J5LWphcGFuZXNlLmNvbS9oaXN0b3J5LyVFNiU5NyVBOSVFNSVCNyU5RCVFNSVCRSVCMyVFNiVBQyVBMSVFMyU4MSU4QyVFNSVBNCVBNyVFOSU5OCVBQSVFOSU5OCVCRiVFNSU4MCU4RCVFOSU4NyU4RSVFMyU4MSVBQiVFNiU5NyVBOSVFNSVCNyU5RCVFOSU4NyU5MSVFNSVCMSU5RSVFNSVCNyVBNSVFNiVBNSVBRCVFNyVBMCU5NCVFNyVBOSVCNiVFNiU4OSU4MCVFMyU4MiU5MiVFOCVBOCVBRC8）。詳細: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "a1aHR0cHM6Ly9oaXN0b3J5LWphcGFuZXNlLmNvbS9oaXN0b3J5LyVFNiU5NyVBOSVFNSVCNyU5RCVFNSVCRSVCMyVFNiVBQyVBMSVFMyU4MSU4QyVFNSVBNCVBNyVFOSU5OCVBQSVFOSU5OCVCRiVFNSU4MCU4RCVFOSU4NyU4RSVFMyU4MSVBQiVFNiU5NyVBOSVFNSVCNyU5RCVFOSU4NyU5MSVFNSVCMSU5RSVFNSVCNyVBNSVFNiVBNSVBRCVFNyVBMCU5NCVFNyVBOSVCNiVFNiU4OSU4MCVFMyU4MiU5MiVFOCVBOCVBRC8", waiting until "domcontentloaded"
+Traceback (most recent call last):
+  File "C:\Users\nshigeoka\Desktop\git\company_name_change_checker.py", line 630, in analyze_company
+    await detail_page.goto(target_url_for_crawl, timeout=90000, wait_until="domcontentloaded")
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 8991, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "a1aHR0cHM6Ly9oaXN0b3J5LWphcGFuZXNlLmNvbS9oaXN0b3J5LyVFNiU5NyVBOSVFNSVCNyU5RCVFNSVCRSVCMyVFNiVBQyVBMSVFMyU4MSU4QyVFNSVBNCVBNyVFOSU5OCVBQSVFOSU5OCVCRiVFNSU4MCU4RCVFOSU4NyU4RSVFMyU4MSVBQiVFNiU5NyVBOSVFNSVCNyU5RCVFOSU4NyU5MSVFNSVCMSU5RSVFNSVCNyVBNSVFNiVBNSVBRCVFNyVBMCU5NCVFNyVBOSVCNiVFNiU4OSU4MCVFMyU4MiU5MiVFOCVBOCVBRC8", waiting until "domcontentloaded"
+
+2025-06-05 10:29:57,993 - INFO - 要確認（関連情報検出）: 株式会社早川金属工業研究所  - 強力キーワード検出のみ, URL: a1aHR0cHM6Ly9jb3Jwb3JhdGUuYWktY29uLmxhd3llci9hcnRpY2xlcy9jb21wYW55LW5hbWUtY2hhbmdl
+2025-06-05 10:29:58,314 - INFO - 検索開始: 株式会社ダイコーテクノ (クエリ: "株式会社ダイコーテクノ" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:29:58,314 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%80%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%86%E3%82%AF%E3%83%8E%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:30:06,071 - INFO - [DEBUG] Found 50 unique potential search result links for '"株式会社ダイテック" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:30:06,429 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: a1aHR0cHM6Ly93d3cuZGFpdGVjLmpwL2luZm8vY2FkX3N1bnouaHRtbA
+2025-06-05 10:30:06,430 - INFO - 本文クロール開始: a1aHR0cHM6Ly93d3cuZGFpdGVjLmpwL2luZm8vY2FkX3N1bnouaHRtbA
+2025-06-05 10:30:06,700 - ERROR - 本文クロール中にエラー発生（URL: a1aHR0cHM6Ly93d3cuZGFpdGVjLmpwL2luZm8vY2FkX3N1bnouaHRtbA）。詳細: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "a1aHR0cHM6Ly93d3cuZGFpdGVjLmpwL2luZm8vY2FkX3N1bnouaHRtbA", waiting until "domcontentloaded"
+Traceback (most recent call last):
+  File "C:\Users\nshigeoka\Desktop\git\company_name_change_checker.py", line 630, in analyze_company
+    await detail_page.goto(target_url_for_crawl, timeout=90000, wait_until="domcontentloaded")
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 8991, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "a1aHR0cHM6Ly93d3cuZGFpdGVjLmpwL2luZm8vY2FkX3N1bnouaHRtbA", waiting until "domcontentloaded"
+
+2025-06-05 10:30:06,767 - INFO - 要確認（関連情報検出）: 株式会社ダイテック - 強力キーワード検出のみ, URL: a1aHR0cHM6Ly93d3cuZGFpdGVjLmpwL2luZm8vY2FkX3N1bnouaHRtbA
+2025-06-05 10:30:07,186 - INFO - 検索開始: 株式会社早川金属工業研究所 (クエリ: "株式会社早川金属工業研究所" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:30:07,187 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%97%A9%E5%B7%9D%E9%87%91%E5%B1%9E%E5%B7%A5%E6%A5%AD%E7%A0%94%E7%A9%B6%E6%89%80%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:30:07,577 - INFO - [DEBUG] Found 17 unique potential search result links for '"株式会社ダイコーテクノ" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:30:08,201 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://d-tech-port.daikonet.co.jp/2024/06/28/%E3%83%80%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%86%E3%82%AF%E3%83%8E%EF%BC%9A-%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB%E3%81%AE%E3%81%8A/
+2025-06-05 10:30:08,202 - INFO - 本文クロール開始: https://d-tech-port.daikonet.co.jp/2024/06/28/%E3%83%80%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%86%E3%82%AF%E3%83%8E%EF%BC%9A-%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB%E3%81%AE%E3%81%8A/
+2025-06-05 10:30:10,543 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社ダイコーテクノ
+2025-06-05 10:30:10,600 - INFO - 変更なしと判断: 株式会社ダイコーテクノ
+2025-06-05 10:30:10,930 - INFO - 検索開始: 松下電器産業株式会社  (クエリ: "松下電器産業株式会社 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:30:10,930 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%9D%BE%E4%B8%8B%E9%9B%BB%E5%99%A8%E7%94%A3%E6%A5%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%C2%A0%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:30:15,007 - INFO - [DEBUG] Found 20 unique potential search result links for '"株式会社早川金属工業研究所" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:30:15,323 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: http://www.tokusen.sharp.co.jp/70th/history/history_1.html
+2025-06-05 10:30:15,323 - INFO - 本文クロール開始: http://www.tokusen.sharp.co.jp/70th/history/history_1.html
+2025-06-05 10:30:17,687 - INFO - 本文クロールで新社名発見！ 株式会社早川金属工業研究所 -> 早川金属工業株式会社
+2025-06-05 10:30:17,764 - INFO - 明確な変更検出: 株式会社早川金属工業研究所 -> 早川金属工業株式会社, 日付: 1931年, 理由: 創立40周年記念のため
+2025-06-05 10:30:18,120 - INFO - 検索開始: 株式会社バルス (クエリ: "株式会社バルス" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:30:18,121 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%90%E3%83%AB%E3%82%B9%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:30:19,565 - INFO - [DEBUG] Found 17 unique potential search result links for '"松下電器産業株式会社 " 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:30:19,853 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://kaden.watch.impress.co.jp/cda/news/2008/06/26/2509.html
+2025-06-05 10:30:19,853 - INFO - 本文クロール開始: https://kaden.watch.impress.co.jp/cda/news/2008/06/26/2509.html
+2025-06-05 10:30:22,137 - ERROR - 本文クロール中にエラー発生（URL: https://special.nikkeibp.co.jp/atclh/ONB/24/tcs_hd0726/）。詳細: Timeout 90000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+Traceback (most recent call last):
+  File "C:\Users\nshigeoka\Desktop\git\company_name_change_checker.py", line 631, in analyze_company
+    await detail_page.wait_for_load_state('networkidle', timeout=90000)
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 9087, in wait_for_load_state
+    await self._impl_obj.wait_for_load_state(state=state, timeout=timeout)
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 568, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 243, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 271, in _wait_for_load_state_impl
+    await waiter.result()
+playwright._impl._errors.TimeoutError: Timeout 90000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-06-05 10:30:22,296 - INFO - 要確認（関連情報検出）: 株式会社マーブル - 強力キーワード検出のみ, URL: https://special.nikkeibp.co.jp/atclh/ONB/24/tcs_hd0726/
+2025-06-05 10:30:22,614 - INFO - 検索開始: 株式会社島村呉服店 (クエリ: "株式会社島村呉服店" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:30:22,615 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%B3%B6%E6%9D%91%E5%91%89%E6%9C%8D%E5%BA%97%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:30:25,913 - INFO - [DEBUG] Found 17 unique potential search result links for '"株式会社バルス" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:30:26,135 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://prtimes.jp/main/html/rd/p/000000022.000021410.html
+2025-06-05 10:30:26,135 - INFO - 本文クロール開始: https://prtimes.jp/main/html/rd/p/000000022.000021410.html
+2025-06-05 10:30:29,611 - INFO - 本文クロールで新社名発見！ 松下電器産業株式会社  -> パナソニック株式会社
+2025-06-05 10:30:29,683 - INFO - 要確認（新社名候補あり）: 松下電器産業株式会社  -> 新社名候補: パナソニック株式会社, 日付: 2008年1月, 理由: 不明
+2025-06-05 10:30:30,006 - INFO - 検索開始: 株式会社福武式書店 (クエリ: "株式会社福武式書店" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号")
+2025-06-05 10:30:30,007 - INFO - Bing検索ページへ移動: https://www.bing.com/search?q=%22%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E7%A6%8F%E6%AD%A6%E5%BC%8F%E6%9B%B8%E5%BA%97%22%20%E7%A4%BE%E5%90%8D%E5%A4%89%E6%9B%B4%20OR%20%E5%95%86%E5%8F%B7%E5%A4%89%E6%9B%B4%20OR%20%E6%96%B0%E7%A4%BE%E5%90%8D%20OR%20%E6%96%B0%E5%95%86%E5%8F%B7%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%A4%89%E6%9B%B4%20OR%20%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%20OR%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20OR%20%E6%B2%BF%E9%9D%A9%20OR%20IR%E6%83%85%E5%A0%B1%20OR%20%22%E6%97%A7%E7%A4%BE%E5%90%8D%22%20OR%20%22%E6%97%A7%E5%95%86%E5%8F%B7%22
+2025-06-05 10:30:30,895 - INFO - [DEBUG] Found 18 unique potential search result links for '"株式会社島村呉服店" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:30:31,160 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: https://sslimg.shimamura.gr.jp/company/history/index.php
+2025-06-05 10:30:31,162 - INFO - 本文クロール開始: https://sslimg.shimamura.gr.jp/company/history/index.php
+2025-06-05 10:30:32,480 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社島村呉服店
+2025-06-05 10:30:32,536 - INFO - 変更なしと判断: 株式会社島村呉服店
+2025-06-05 10:30:39,404 - INFO - [DEBUG] Found 5 unique potential search result links for '"株式会社福武式書店" 社名変更 OR 商号変更 OR 新社名 OR 新商号 OR ブランド変更 OR プレスリリース OR 公式サイト OR 沿革 OR IR情報 OR "旧社名" OR "旧商号"'
+2025-06-05 10:30:39,505 - INFO - 公式サイト候補なし。最もスコアの高いURLをクロール対象に設定: http://go.microsoft.com/fwlink/?LinkId=521839
+2025-06-05 10:30:39,505 - INFO - 本文クロール開始: http://go.microsoft.com/fwlink/?LinkId=521839
+2025-06-05 10:30:42,001 - INFO - 本文クロールで新社名を発見できませんでした: 株式会社福武式書店
+2025-06-05 10:30:42,060 - INFO - 変更なしと判断: 株式会社福武式書店
+2025-06-05 10:31:56,715 - ERROR - 本文クロール中にエラー発生（URL: https://prtimes.jp/main/html/rd/p/000000022.000021410.html）。詳細: Timeout 90000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+Traceback (most recent call last):
+  File "C:\Users\nshigeoka\Desktop\git\company_name_change_checker.py", line 631, in analyze_company
+    await detail_page.wait_for_load_state('networkidle', timeout=90000)
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 9087, in wait_for_load_state
+    await self._impl_obj.wait_for_load_state(state=state, timeout=timeout)
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 568, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 243, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nshigeoka\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 271, in _wait_for_load_state_impl
+    await waiter.result()
+playwright._impl._errors.TimeoutError: Timeout 90000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-06-05 10:31:56,829 - INFO - 要確認（関連情報検出）: 株式会社バルス - 強力キーワード検出のみ, URL: https://prtimes.jp/main/html/rd/p/000000022.000021410.html
+2025-06-05 10:31:58,893 - INFO - 結果をExcelファイル 'output.xlsx' に出力しました。
+2025-06-05 10:31:58,893 - INFO - --- 社名変更情報チェッカーを終了します ---
